@@ -23,29 +23,29 @@ struct HomeView: View {
 					Group {
 						NavigationLink(destination: ButtonsView(namespace: namespace), label: { Text("Button") })
 						
-						NavigationLink(destination: ButtonsView(namespace: namespace), label: { Text("Images") })
+						NavigationLink(destination: Text("Images"), label: { Text("Images") })
 						
-						NavigationLink(destination: ButtonsView(namespace: namespace), label: { Text("Texts") })
+						NavigationLink(destination: Text("Texts") , label: { Text("Texts") })
 						
-						NavigationLink(destination: ButtonsView(namespace: namespace), label: { Text("Labels") })
+						NavigationLink(destination: Text("Labels"), label: { Text("Labels") })
 						
-						NavigationLink(destination: ButtonsView(namespace: namespace), label: { Text("Menus") })
+						NavigationLink(destination: Text("Menus"), label: { Text("Menus") })
 					}
 				
 					Group {
-						NavigationLink(destination: ButtonsView(namespace: namespace), label: { Text("Toggles") })
+						NavigationLink(destination: Text("Toggles"), label: { Text("Toggles") })
 						
-						NavigationLink(destination: ButtonsView(namespace: namespace), label: { Text("Sliders") })
+						NavigationLink(destination: Text("Sliders"), label: { Text("Sliders") })
 						
-						NavigationLink(destination: ButtonsView(namespace: namespace), label: { Text("Steppers") })
+						NavigationLink(destination: Text("Steppers"), label: { Text("Steppers") })
 						
-						NavigationLink(destination: ButtonsView(namespace: namespace), label: { Text("Pickers") })
+						NavigationLink(destination: Text("Pickers"), label: { Text("Pickers") })
 						
-						NavigationLink(destination: ButtonsView(namespace: namespace), label: { Text("Date Pickers") })
+						NavigationLink(destination: Text("Date Picker"), label: { Text("Date Pickers") })
 						
-						NavigationLink(destination: ButtonsView(namespace: namespace), label: { Text("Color Pickers") })
+						NavigationLink(destination: Text("Color Picker"), label: { Text("Color Pickers") })
 						
-						NavigationLink(destination: ButtonsView(namespace: namespace), label: { Text("Progress View") })
+						NavigationLink(destination: Text("Progress View"), label: { Text("Progress View") })
 						
 					}
 				}.listRowBackground(Color.indigo)
