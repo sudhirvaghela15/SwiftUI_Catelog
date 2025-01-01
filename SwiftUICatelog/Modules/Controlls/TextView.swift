@@ -20,7 +20,10 @@ struct TextView: View {
 			Divider().padding(.vertical)
 			fontWeights
 			Divider().padding(.vertical)
-			
+			fontModifier
+			Divider().padding(.vertical)
+			textTrunction
+			Divider().padding(.vertical)
 		}.padding(.horizontal, 16)
     }
 }
@@ -69,6 +72,7 @@ extension TextView {
 	}
 }
 
+	// MARK: - fontWeights
 extension TextView {
 	private var fontWeights: some View {
 		GroupBox {
@@ -80,7 +84,6 @@ extension TextView {
 				Text("Font can also be assigned a weight, which change the appereance of the font.")
 					.fontWeight(.light)
 					.font(.title2)
-				
 				
 				HStack {
 					Spacer()
@@ -106,6 +109,61 @@ extension TextView {
 					}
 					Spacer()
 				}
+			}
+		}
+	}
+}
+
+	// MARK: - Font modifier
+extension TextView {
+	private var fontModifier: some View {
+		GroupBox {
+			VStack(alignment: .leading, content: {
+				Text("Text, italic, bold")
+					.fontWeight(.heavy)
+					.font(.title)
+				HStack {
+					Spacer()
+					VStack(alignment: .center) {
+						Text("Italic")
+							.italic()
+						Text("Bold")
+							.bold()
+						Text("Underline")
+							.underline()
+						Text("Strike Through")
+							.strikethrough()
+						Text("Kerning")
+							.kerning(4)
+						Text("Tracking")
+							.tracking(3)
+						Text("With Shadow")
+							.shadow(color: .green, radius: 12, x: 1, y: 2)
+					}
+					Spacer()
+				}
+			})
+		}
+	}
+}
+
+	// MARK: - Text Trunction
+
+extension TextView {
+	private var textTrunction: some View {
+		GroupBox {
+			VStack(alignment: .leading) {
+				Text("Text Truncations and multiline")
+					.fontWeight(.heavy)
+					.font(.title)
+				Text("Very long text truncated")
+					.frame(width: 150)
+					.lineLimit(1)
+					.minimumScaleFactor(0.8)
+					.allowsTightening(false)
+					.truncationMode(.middle)
+				Text("Multiline text arranged in how many lines as it is needed")
+					.multilineTextAlignment(.center)
 			}
 		}
 	}
