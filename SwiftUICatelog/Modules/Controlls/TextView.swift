@@ -18,10 +18,13 @@ struct TextView: View {
 			DocumentationLinkView(link: "https://developer.apple.com/documentation/swiftui/text", name: nil)
 			fontTypes
 			Divider().padding(.vertical)
+			fontWeights
+			Divider().padding(.vertical)
+			
 		}.padding(.horizontal, 16)
     }
 }
-
+	// MARK: - font types
 extension TextView {
 	private var fontTypes: some View {
 		GroupBox {
@@ -58,6 +61,48 @@ extension TextView {
 							.font(.caption2)
 						Text("Footnote")
 							.font(.footnote)
+					}
+					Spacer()
+				}
+			}
+		}
+	}
+}
+
+extension TextView {
+	private var fontWeights: some View {
+		GroupBox {
+			VStack(alignment: .leading) {
+				Text("Available font weights")
+					.font(.title)
+					.fontWeight(.heavy)
+				
+				Text("Font can also be assigned a weight, which change the appereance of the font.")
+					.fontWeight(.light)
+					.font(.title2)
+				
+				
+				HStack {
+					Spacer()
+					VStack(alignment: .center) {
+						Text("Weight Black")
+							.fontWeight(.black)
+						Text("Weight Heavy")
+							.fontWeight(.heavy)
+						Text("Weight bold")
+							.fontWeight(.bold)
+						Text("Weight semi bold")
+							.fontWeight(.semibold)
+						Text("Weight Medium")
+							.fontWeight(.medium)
+						Text("Weight Regular")
+							.fontWeight(.regular)
+						Text("Weight Light")
+							.fontWeight(.light)
+						Text("Weight Ultra Light")
+							.fontWeight(.ultraLight)
+						Text("Weight Thin")
+							.fontWeight(.thin)
 					}
 					Spacer()
 				}
