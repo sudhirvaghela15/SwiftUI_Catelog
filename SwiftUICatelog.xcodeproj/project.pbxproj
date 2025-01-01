@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F2753C2D2D2552E600F470A0 /* NavigationDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753C2B2D2552E600F470A0 /* NavigationDestination.swift */; };
 		F2753C312D2552E600F470A0 /* Controlls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753C302D2552E600F470A0 /* Controlls.swift */; };
 		F2753CB92D2562E900F470A0 /* DocumentationLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CB52D2562E900F470A0 /* DocumentationLinkView.swift */; };
 		F2753CBA2D2562E900F470A0 /* FontTextStylePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CB62D2562E900F470A0 /* FontTextStylePicker.swift */; };
@@ -21,6 +20,9 @@
 		F2753CCB2D25886800F470A0 /* LabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CCA2D25886800F470A0 /* LabelsView.swift */; };
 		F2753CCD2D25922700F470A0 /* TogglesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CCC2D25922700F470A0 /* TogglesView.swift */; };
 		F2753CCF2D259A6800F470A0 /* SlidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CCE2D259A6800F470A0 /* SlidersView.swift */; };
+		F2753CDF2D25B4C500F470A0 /* DragState.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CD92D25B4C500F470A0 /* DragState.swift */; };
+		F2753CE02D25B4C500F470A0 /* ComposingGesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CDB2D25B4C500F470A0 /* ComposingGesturesView.swift */; };
+		F2753CE12D25B4C500F470A0 /* GesturesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CDC2D25B4C500F470A0 /* GesturesView.swift */; };
 		F2B5AA2D2D2515440011787A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B5AA252D2515440011787A /* Assets.xcassets */; };
 		F2B5AA2E2D2515440011787A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B5AA272D2515440011787A /* Preview Assets.xcassets */; };
 		F2B5AA352D2515630011787A /* SwiftUICatelogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5AA332D2515630011787A /* SwiftUICatelogApp.swift */; };
@@ -29,7 +31,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F2753C2B2D2552E600F470A0 /* NavigationDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestination.swift; sourceTree = "<group>"; };
 		F2753C302D2552E600F470A0 /* Controlls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controlls.swift; sourceTree = "<group>"; };
 		F2753CB52D2562E900F470A0 /* DocumentationLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentationLinkView.swift; sourceTree = "<group>"; };
 		F2753CB62D2562E900F470A0 /* FontTextStylePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTextStylePicker.swift; sourceTree = "<group>"; };
@@ -43,6 +44,9 @@
 		F2753CCA2D25886800F470A0 /* LabelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsView.swift; sourceTree = "<group>"; };
 		F2753CCC2D25922700F470A0 /* TogglesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglesView.swift; sourceTree = "<group>"; };
 		F2753CCE2D259A6800F470A0 /* SlidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidersView.swift; sourceTree = "<group>"; };
+		F2753CD92D25B4C500F470A0 /* DragState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragState.swift; sourceTree = "<group>"; };
+		F2753CDB2D25B4C500F470A0 /* ComposingGesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposingGesturesView.swift; sourceTree = "<group>"; };
+		F2753CDC2D25B4C500F470A0 /* GesturesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesView.swift; sourceTree = "<group>"; };
 		F2B5AA252D2515440011787A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2B5AA272D2515440011787A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2B5AA332D2515630011787A /* SwiftUICatelogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICatelogApp.swift; sourceTree = "<group>"; };
@@ -104,6 +108,32 @@
 			path = Controlls;
 			sourceTree = "<group>";
 		};
+		F2753CDA2D25B4C500F470A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F2753CD92D25B4C500F470A0 /* DragState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2753CDD2D25B4C500F470A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2753CDB2D25B4C500F470A0 /* ComposingGesturesView.swift */,
+				F2753CDC2D25B4C500F470A0 /* GesturesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F2753CDE2D25B4C500F470A0 /* Gestrure */ = {
+			isa = PBXGroup;
+			children = (
+				F2753CDA2D25B4C500F470A0 /* Model */,
+				F2753CDD2D25B4C500F470A0 /* Views */,
+			);
+			path = Gestrure;
+			sourceTree = "<group>";
+		};
 		F2B5A9C72D2507880011787A = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +192,7 @@
 		F2B5AA372D2515AF0011787A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F2753C2B2D2552E600F470A0 /* NavigationDestination.swift */,
+				F2753CDE2D25B4C500F470A0 /* Gestrure */,
 				F2753CB82D2562E900F470A0 /* Shared Views */,
 				F2753CC42D2562E900F470A0 /* Controlls */,
 				F2B5AA442D2517810011787A /* Home */,
@@ -287,7 +317,9 @@
 				F2753CC72D2563C500F470A0 /* TextView.swift in Sources */,
 				F2753CC22D2562E900F470A0 /* RoundedBordersModifier.swift in Sources */,
 				F2B5AA352D2515630011787A /* SwiftUICatelogApp.swift in Sources */,
-				F2753C2D2D2552E600F470A0 /* NavigationDestination.swift in Sources */,
+				F2753CDF2D25B4C500F470A0 /* DragState.swift in Sources */,
+				F2753CE02D25B4C500F470A0 /* ComposingGesturesView.swift in Sources */,
+				F2753CE12D25B4C500F470A0 /* GesturesView.swift in Sources */,
 				F2B5AA5E2D25365A0011787A /* HomeView.swift in Sources */,
 				F2753CCF2D259A6800F470A0 /* SlidersView.swift in Sources */,
 				F2753CB92D2562E900F470A0 /* DocumentationLinkView.swift in Sources */,

@@ -165,7 +165,6 @@ private extension LabelsView {
 	}
 }
 
-
 	// MARK: - Custom Label Style
 struct SVRedBorderedLabelStyle: LabelStyle {
 	func makeBody(configuration: Configuration) -> some View {

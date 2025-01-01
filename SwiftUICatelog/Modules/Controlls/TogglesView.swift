@@ -18,8 +18,10 @@ struct TogglesView: View {
     var body: some View {
 		Group {
 			VStack(alignment: .leading) {
-				DocumentationLinkView(link: "https://developer.apple.com/documentation/swiftui/toggle", name: "TOGGLES")
-				
+				HStack() {
+					Spacer()
+					DocumentationLinkView(link: "https://developer.apple.com/documentation/swiftui/toggle", name: "TOGGLES")
+				}
 				GroupBox {
 					defaultToggle
 					Divider().padding(.vertical)
@@ -91,34 +93,21 @@ struct CustomToggleStyle: ToggleStyle {
 		HStack {
 			configuration.label
 			Spacer()
-			Button(
-				action: {
+			Button(action: {
 					configuration.isOn = !configuration.isOn
-				},
-				label: {
+				}, label: {
 					Rectangle()
 						.fill(configuration.isOn ? Color.purple : .blue.opacity(0.5))
-						.frame(
-							width: 50,
-							height: 30
-						)
+						.frame(width: 50, height: 30)
 						.overlay(
 							Ellipse()
-								.frame(
-									width: 20,
-									height: configuration.isOn ? 20 : 5
-								)
+								.frame(	width: 20, height: configuration.isOn ? 20 : 5)
 								.foregroundColor(.white)
-								.offset(
-									x: configuration.isOn ? 11 : -11,
-									y: 0
-								)
+								.offset(x: configuration.isOn ? 11 : -11, y: 0)
 								.animation(.easeInOut, value: configuration.isOn)
-						)
-						.cornerRadius(20)
+						).cornerRadius(20)
 				}
-			)
-			.buttonStyle(.plain)
+			).buttonStyle(.plain)
 		}
 	}
 }

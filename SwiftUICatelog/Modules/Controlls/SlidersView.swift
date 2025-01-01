@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct SlidersView: View {
 	
 	@State private var grams1 = 15.0
@@ -19,10 +18,13 @@ struct SlidersView: View {
 	
 	var body: some View {
 		ScrollView {
-			VStack(alignment: .leading) {
+			HStack() {
+				Spacer()
 				DocumentationLinkView(link: "https://developer.apple.com/documentation/swiftui/slider", name: "SLIDER")
-					sliderGrams
-					sliderWithVoiceOver
+				sliderGrams
+			}
+			VStack(alignment: .leading) {
+				sliderWithVoiceOver
 			}
 		}.padding(.top, 80)
 	}
