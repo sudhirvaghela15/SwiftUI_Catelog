@@ -12,12 +12,17 @@ import Foundation
 /// https://developer.apple.com/documentation/swiftui/model-data
 /// https://developer.apple.com/documentation/swiftui/app-structure-and-behavior
 /// https://developer.apple.com/documentation/visionOS/destination-video
-/// text variant preference =  https://developer.apple.com/documentation/swiftui/textvariantpreference?changes=_4
-/// Group box => https://developer.apple.com/documentation/swiftui/groupbox
+/// https://developer.apple.com/documentation/swiftui/textvariantpreference?changes=_4
+/// https://developer.apple.com/documentation/swiftui/groupbox
 ///
-///
-///
-///
-///
-
-
+////-----------------------------------------------------------------------------------------------------------------------------------------------
+/// **Geometry Releted Doc's
+/// https://developer.apple.com/documentation/swiftui/geometryreader
+/// https://developer.apple.com/documentation/swiftui/geometryproxy
+/// https://developer.apple.com/documentation/swiftui/geometryeffect
+/// https://developer.apple.com/documentation/swiftui/anchor
+/// https://developer.apple.com/documentation/swiftui/unitpoint
+/// https://developer.apple.com/documentation/swiftui/angle
+/// https://developer.apple.com/documentation/swiftui/projectiontransform
+/// https://developer.apple.com/documentation/swiftui/vectorarithmetic
+////-----------------------------------------------------------------------------------------------------------------------------------------------
