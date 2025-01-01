@@ -15,8 +15,9 @@
 /* Begin PBXFileReference section */
 		F2B5AA252D2515440011787A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2B5AA272D2515440011787A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		F2B5AA322D2515630011787A /* SwiftUICatelog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SwiftUICatelog.app; path = "/Users/sm15/Personal/XCode-Projects/SwiftUI/SwiftUICatelog/build/Debug-iphoneos/SwiftUICatelog.app"; sourceTree = "<absolute>"; };
 		F2B5AA332D2515630011787A /* SwiftUICatelogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICatelogApp.swift; sourceTree = "<group>"; };
+		F2B5AA572D252F770011787A /* SwiftUICatelog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SwiftUICatelog.app; path = "/Users/sm15/Personal/XCode-Projects/SwiftUI/SwiftUICatelog/build/Debug-iphoneos/SwiftUICatelog.app"; sourceTree = "<absolute>"; };
+		F2B5AA582D252F770011787A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				F2B5AA282D2515440011787A /* Preview Content */,
+				F2B5AA582D252F770011787A /* Info.plist */,
 			);
 			path = "Supporting File's";
 			sourceTree = "<group>";
@@ -186,7 +188,7 @@
 			packageProductDependencies = (
 			);
 			productName = SwiftUICatelog;
-			productReference = F2B5AA322D2515630011787A /* SwiftUICatelog.app */;
+			productReference = F2B5AA572D252F770011787A /* SwiftUICatelog.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -377,9 +379,9 @@
 				DEVELOPMENT_TEAM = 7RC8RLSUKW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUICatelog/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -407,9 +409,9 @@
 				DEVELOPMENT_TEAM = 7RC8RLSUKW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUICatelog/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
