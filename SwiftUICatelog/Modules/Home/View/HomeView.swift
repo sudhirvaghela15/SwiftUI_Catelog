@@ -32,7 +32,7 @@ struct HomeView: View {
 								label: { Text("Texts")
 								})
 							
-							NavigationLink(destination: Text("Labels"), label: { Text("Labels") })
+							NavigationLink(destination: LabelsView(), label: { Text("Labels") })
 							
 							NavigationLink(destination: Text("Menus"), label: { Text("Menus") })
 						}

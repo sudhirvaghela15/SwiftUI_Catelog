@@ -29,7 +29,6 @@ struct DocumentationLinkView: View {
 			isSheetPresented = true
 		}, label: {
 			HStack {
-				Spacer()
 				Image(systemName: "book.and.wrench")
 					.padding(12)
 					.fontWeight(.bold)

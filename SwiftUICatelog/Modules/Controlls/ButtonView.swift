@@ -37,8 +37,10 @@ struct ButtonsView: View {
     var body: some View {
 		ScrollView {
 			VStack(alignment: .leading) {
-				DocumentationLinkView(link: "https://developer.apple.com/documentation/swiftui/button", name: nil)
-				
+				HStack() {
+					Spacer()
+					DocumentationLinkView(link: "https://developer.apple.com/documentation/swiftui/button", name: nil)
+				}
 				Text("Given an action and a label you can create a button. When a user clicks or taps the button, an action—a method or closure property—is triggered. The label is a view that can display text, an icon, or both to describe the operation of the button. Any type of view, such as a Text view for text-only labels, can be the label of a button.")
 					.fontWeight(.light)
 					.font(.title2)

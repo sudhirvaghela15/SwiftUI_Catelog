@@ -11,8 +11,10 @@ import SwiftUI
 struct ImagesComponentView: View {
     var body: some View {
 		ScrollView {
-			DocumentationLinkView(link: "https://developer.apple.com/documentation/swiftui/image", name: "IMAGE VIEW")
-			
+			HStack() {
+				Spacer()
+				DocumentationLinkView(link: "https://developer.apple.com/documentation/swiftui/image", name: "IMAGE VIEW")
+			}
 			sfSymbols
 			Divider().padding(.vertical)
 			imagesFromBundle

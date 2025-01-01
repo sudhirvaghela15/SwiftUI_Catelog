@@ -15,7 +15,10 @@ struct TextView: View {
 	
     var body: some View {
 		ScrollView {
-			DocumentationLinkView(link: "https://developer.apple.com/documentation/swiftui/text", name: nil)
+			HStack() {
+				Spacer()
+				DocumentationLinkView(link: "https://developer.apple.com/documentation/swiftui/text", name: nil)
+			}
 			fontTypes
 			Divider().padding(.vertical)
 			fontWeights
