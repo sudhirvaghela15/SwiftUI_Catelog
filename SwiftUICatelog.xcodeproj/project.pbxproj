@@ -17,6 +17,7 @@
 		F2753CC22D2562E900F470A0 /* RoundedBordersModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CBE2D2562E900F470A0 /* RoundedBordersModifier.swift */; };
 		F2753CC52D2562E900F470A0 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CC32D2562E900F470A0 /* ButtonView.swift */; };
 		F2753CC72D2563C500F470A0 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CC62D2563C500F470A0 /* TextView.swift */; };
+		F2753CC92D25838D00F470A0 /* ImagesComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CC82D25838D00F470A0 /* ImagesComponentView.swift */; };
 		F2B5AA2D2D2515440011787A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B5AA252D2515440011787A /* Assets.xcassets */; };
 		F2B5AA2E2D2515440011787A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B5AA272D2515440011787A /* Preview Assets.xcassets */; };
 		F2B5AA352D2515630011787A /* SwiftUICatelogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5AA332D2515630011787A /* SwiftUICatelogApp.swift */; };
@@ -35,6 +36,7 @@
 		F2753CBE2D2562E900F470A0 /* RoundedBordersModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBordersModifier.swift; sourceTree = "<group>"; };
 		F2753CC32D2562E900F470A0 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		F2753CC62D2563C500F470A0 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		F2753CC82D25838D00F470A0 /* ImagesComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesComponentView.swift; sourceTree = "<group>"; };
 		F2B5AA252D2515440011787A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2B5AA272D2515440011787A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2B5AA332D2515630011787A /* SwiftUICatelogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICatelogApp.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				F2753CC32D2562E900F470A0 /* ButtonView.swift */,
 				F2753CC62D2563C500F470A0 /* TextView.swift */,
+				F2753CC82D25838D00F470A0 /* ImagesComponentView.swift */,
 			);
 			path = Controlls;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			files = (
 				F2753CC02D2562E900F470A0 /* ButtonFontModifier.swift in Sources */,
 				F2753CC12D2562E900F470A0 /* ListSectionFontModifier.swift in Sources */,
+				F2753CC92D25838D00F470A0 /* ImagesComponentView.swift in Sources */,
 				F2753CC52D2562E900F470A0 /* ButtonView.swift in Sources */,
 				F2753CC72D2563C500F470A0 /* TextView.swift in Sources */,
 				F2753CC22D2562E900F470A0 /* RoundedBordersModifier.swift in Sources */,
