@@ -63,8 +63,7 @@ struct ButtonsView: View {
 	ButtonsView(namespace: Namespace().wrappedValue)
 }
 
-	// MARK: - Rounded Button
-
+// MARK: - Rounded Button
 extension ButtonsView {
 	@ViewBuilder
 	var roundedButtons: some View {

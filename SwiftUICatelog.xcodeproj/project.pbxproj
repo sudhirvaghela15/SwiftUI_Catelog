@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		F2753C2D2D2552E600F470A0 /* NavigationDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753C2B2D2552E600F470A0 /* NavigationDestination.swift */; };
 		F2753C312D2552E600F470A0 /* Controlls.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753C302D2552E600F470A0 /* Controlls.swift */; };
+		F2753CB92D2562E900F470A0 /* DocumentationLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CB52D2562E900F470A0 /* DocumentationLinkView.swift */; };
+		F2753CBA2D2562E900F470A0 /* FontTextStylePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CB62D2562E900F470A0 /* FontTextStylePicker.swift */; };
+		F2753CBB2D2562E900F470A0 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CB72D2562E900F470A0 /* WebView.swift */; };
+		F2753CC02D2562E900F470A0 /* ButtonFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CBC2D2562E900F470A0 /* ButtonFontModifier.swift */; };
+		F2753CC12D2562E900F470A0 /* ListSectionFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CBD2D2562E900F470A0 /* ListSectionFontModifier.swift */; };
+		F2753CC22D2562E900F470A0 /* RoundedBordersModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CBE2D2562E900F470A0 /* RoundedBordersModifier.swift */; };
+		F2753CC52D2562E900F470A0 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CC32D2562E900F470A0 /* ButtonView.swift */; };
 		F2B5AA2D2D2515440011787A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B5AA252D2515440011787A /* Assets.xcassets */; };
 		F2B5AA2E2D2515440011787A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B5AA272D2515440011787A /* Preview Assets.xcassets */; };
 		F2B5AA352D2515630011787A /* SwiftUICatelogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5AA332D2515630011787A /* SwiftUICatelogApp.swift */; };
@@ -19,6 +26,13 @@
 /* Begin PBXFileReference section */
 		F2753C2B2D2552E600F470A0 /* NavigationDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDestination.swift; sourceTree = "<group>"; };
 		F2753C302D2552E600F470A0 /* Controlls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controlls.swift; sourceTree = "<group>"; };
+		F2753CB52D2562E900F470A0 /* DocumentationLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentationLinkView.swift; sourceTree = "<group>"; };
+		F2753CB62D2562E900F470A0 /* FontTextStylePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTextStylePicker.swift; sourceTree = "<group>"; };
+		F2753CB72D2562E900F470A0 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		F2753CBC2D2562E900F470A0 /* ButtonFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFontModifier.swift; sourceTree = "<group>"; };
+		F2753CBD2D2562E900F470A0 /* ListSectionFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSectionFontModifier.swift; sourceTree = "<group>"; };
+		F2753CBE2D2562E900F470A0 /* RoundedBordersModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedBordersModifier.swift; sourceTree = "<group>"; };
+		F2753CC32D2562E900F470A0 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		F2B5AA252D2515440011787A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2B5AA272D2515440011787A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2B5AA332D2515630011787A /* SwiftUICatelogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICatelogApp.swift; sourceTree = "<group>"; };
@@ -34,21 +48,6 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
-		F2B5AA602D253D630011787A /* Modifiers */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Modifiers;
-			sourceTree = "<group>";
-		};
-		F2B5AA652D253FB30011787A /* Controlls */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Controlls;
-			sourceTree = "<group>";
-		};
-		F2B5AAE22D2548C50011787A /* Shared Views */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Shared Views";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +61,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F2753CB82D2562E900F470A0 /* Shared Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2753CB52D2562E900F470A0 /* DocumentationLinkView.swift */,
+				F2753CB62D2562E900F470A0 /* FontTextStylePicker.swift */,
+				F2753CB72D2562E900F470A0 /* WebView.swift */,
+			);
+			path = "Shared Views";
+			sourceTree = "<group>";
+		};
+		F2753CBF2D2562E900F470A0 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				F2753CBC2D2562E900F470A0 /* ButtonFontModifier.swift */,
+				F2753CBD2D2562E900F470A0 /* ListSectionFontModifier.swift */,
+				F2753CBE2D2562E900F470A0 /* RoundedBordersModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		F2753CC42D2562E900F470A0 /* Controlls */ = {
+			isa = PBXGroup;
+			children = (
+				F2753CC32D2562E900F470A0 /* ButtonView.swift */,
+			);
+			path = Controlls;
+			sourceTree = "<group>";
+		};
 		F2B5A9C72D2507880011787A = {
 			isa = PBXGroup;
 			children = (
@@ -101,7 +128,7 @@
 			children = (
 				F2B5AA342D2515630011787A /* App */,
 				F2B5AA372D2515AF0011787A /* Modules */,
-				F2B5AA602D253D630011787A /* Modifiers */,
+				F2753CBF2D2562E900F470A0 /* Modifiers */,
 				F2B5AA262D2515440011787A /* Resources */,
 				F2B5AA292D2515440011787A /* Supporting File's */,
 			);
@@ -121,8 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				F2753C2B2D2552E600F470A0 /* NavigationDestination.swift */,
-				F2B5AAE22D2548C50011787A /* Shared Views */,
-				F2B5AA652D253FB30011787A /* Controlls */,
+				F2753CB82D2562E900F470A0 /* Shared Views */,
+				F2753CC42D2562E900F470A0 /* Controlls */,
 				F2B5AA442D2517810011787A /* Home */,
 			);
 			path = Modules;
@@ -178,9 +205,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				F2B5AA5A2D25310E0011787A /* JSON */,
-				F2B5AA602D253D630011787A /* Modifiers */,
-				F2B5AA652D253FB30011787A /* Controlls */,
-				F2B5AAE22D2548C50011787A /* Shared Views */,
 			);
 			name = SwiftUICatelog;
 			packageProductDependencies = (
@@ -240,9 +264,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2753CC02D2562E900F470A0 /* ButtonFontModifier.swift in Sources */,
+				F2753CC12D2562E900F470A0 /* ListSectionFontModifier.swift in Sources */,
+				F2753CC52D2562E900F470A0 /* ButtonView.swift in Sources */,
+				F2753CC22D2562E900F470A0 /* RoundedBordersModifier.swift in Sources */,
 				F2B5AA352D2515630011787A /* SwiftUICatelogApp.swift in Sources */,
 				F2753C2D2D2552E600F470A0 /* NavigationDestination.swift in Sources */,
 				F2B5AA5E2D25365A0011787A /* HomeView.swift in Sources */,
+				F2753CB92D2562E900F470A0 /* DocumentationLinkView.swift in Sources */,
+				F2753CBA2D2562E900F470A0 /* FontTextStylePicker.swift in Sources */,
+				F2753CBB2D2562E900F470A0 /* WebView.swift in Sources */,
 				F2B5AA5C2D25342A0011787A /* Links.swift in Sources */,
 				F2753C312D2552E600F470A0 /* Controlls.swift in Sources */,
 			);

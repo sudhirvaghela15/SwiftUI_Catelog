@@ -14,15 +14,10 @@ import Foundation
 /// https://developer.apple.com/documentation/visionOS/destination-video
 /// text variant preference =  https://developer.apple.com/documentation/swiftui/textvariantpreference?changes=_4
 /// Group box => https://developer.apple.com/documentation/swiftui/groupbox
+///
+///
+///
+///
+///
 
 
-
-//
-//					customShapeButtons
-//					labelStyledButton
-//					strokedBorderButtons
-//					plainBackgroundButtons
-//					imagesInButtons
-//					buttonsWithIcons
-//					buttonWithLabels
-//					styledButtons
