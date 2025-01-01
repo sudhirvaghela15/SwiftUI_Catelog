@@ -21,9 +21,9 @@ struct SlidersView: View {
 			HStack() {
 				Spacer()
 				DocumentationLinkView(link: "https://developer.apple.com/documentation/swiftui/slider", name: "SLIDER")
-				sliderGrams
 			}
 			VStack(alignment: .leading) {
+				sliderGrams
 				sliderWithVoiceOver
 			}
 		}.padding(.top, 80)
