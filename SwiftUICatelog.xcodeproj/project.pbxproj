@@ -10,15 +10,47 @@
 		F2B5AA2D2D2515440011787A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B5AA252D2515440011787A /* Assets.xcassets */; };
 		F2B5AA2E2D2515440011787A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B5AA272D2515440011787A /* Preview Assets.xcassets */; };
 		F2B5AA352D2515630011787A /* SwiftUICatelogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5AA332D2515630011787A /* SwiftUICatelogApp.swift */; };
+		F2B5AA5C2D25342A0011787A /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5AA5B2D25342A0011787A /* Links.swift */; };
+		F2B5AA5E2D25365A0011787A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5AA5D2D25365A0011787A /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F2B5AA252D2515440011787A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2B5AA272D2515440011787A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2B5AA332D2515630011787A /* SwiftUICatelogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICatelogApp.swift; sourceTree = "<group>"; };
-		F2B5AA572D252F770011787A /* SwiftUICatelog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SwiftUICatelog.app; path = "/Users/sm15/Personal/XCode-Projects/SwiftUI/SwiftUICatelog/build/Debug-iphoneos/SwiftUICatelog.app"; sourceTree = "<absolute>"; };
 		F2B5AA582D252F770011787A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2B5AA5B2D25342A0011787A /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		F2B5AA5D2D25365A0011787A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F2B5AA5F2D25368F0011787A /* SwiftUICatelog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICatelog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		F2B5AA5A2D25310E0011787A /* JSON */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		F2B5AA602D253D630011787A /* Modifiers */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		F2B5AA652D253FB30011787A /* Controlls */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Controlls;
+			sourceTree = "<group>";
+		};
+		F2B5AADF2D2541AC0011787A /* Helper */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F2B5AAE22D2548C50011787A /* Shared */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F2B5A9CD2D2507880011787A /* Frameworks */ = {
@@ -35,12 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				F2B5AA2C2D2515440011787A /* SwiftUICatelog */,
+				F2B5AA5F2D25368F0011787A /* SwiftUICatelog.app */,
 			);
 			sourceTree = "<group>";
 		};
 		F2B5AA262D2515440011787A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F2B5AA5A2D25310E0011787A /* JSON */,
 				F2B5AA252D2515440011787A /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -68,6 +102,7 @@
 			children = (
 				F2B5AA342D2515630011787A /* App */,
 				F2B5AA372D2515AF0011787A /* Modules */,
+				F2B5AA602D253D630011787A /* Modifiers */,
 				F2B5AA262D2515440011787A /* Resources */,
 				F2B5AA292D2515440011787A /* Supporting File's */,
 			);
@@ -78,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				F2B5AA332D2515630011787A /* SwiftUICatelogApp.swift */,
+				F2B5AA5B2D25342A0011787A /* Links.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -85,8 +121,9 @@
 		F2B5AA372D2515AF0011787A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				F2B5AA522D2517B70011787A /* Shared Views */,
-				F2B5AA442D2517810011787A /* Splash */,
+				F2B5AAE22D2548C50011787A /* Shared */,
+				F2B5AA652D253FB30011787A /* Controlls */,
+				F2B5AA442D2517810011787A /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -98,17 +135,10 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		F2B5AA412D2517810011787A /* Supporting Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Supporting Views";
-			sourceTree = "<group>";
-		};
 		F2B5AA422D2517810011787A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F2B5AA412D2517810011787A /* Supporting Views */,
+				F2B5AA5D2D25365A0011787A /* HomeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,53 +150,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		F2B5AA442D2517810011787A /* Splash */ = {
+		F2B5AA442D2517810011787A /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F2B5AADF2D2541AC0011787A /* Helper */,
 				F2B5AA402D2517810011787A /* Model */,
 				F2B5AA422D2517810011787A /* View */,
 				F2B5AA432D2517810011787A /* ViewModel */,
 			);
-			path = Splash;
-			sourceTree = "<group>";
-		};
-		F2B5AA4E2D2517B70011787A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F2B5AA4F2D2517B70011787A /* Supporting Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Supporting Views";
-			sourceTree = "<group>";
-		};
-		F2B5AA502D2517B70011787A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F2B5AA4F2D2517B70011787A /* Supporting Views */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		F2B5AA512D2517B70011787A /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		F2B5AA522D2517B70011787A /* Shared Views */ = {
-			isa = PBXGroup;
-			children = (
-				F2B5AA4E2D2517B70011787A /* Model */,
-				F2B5AA502D2517B70011787A /* View */,
-				F2B5AA512D2517B70011787A /* ViewModel */,
-			);
-			path = "Shared Views";
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,11 +176,18 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				F2B5AA5A2D25310E0011787A /* JSON */,
+				F2B5AA602D253D630011787A /* Modifiers */,
+				F2B5AA652D253FB30011787A /* Controlls */,
+				F2B5AADF2D2541AC0011787A /* Helper */,
+				F2B5AAE22D2548C50011787A /* Shared */,
+			);
 			name = SwiftUICatelog;
 			packageProductDependencies = (
 			);
 			productName = SwiftUICatelog;
-			productReference = F2B5AA572D252F770011787A /* SwiftUICatelog.app */;
+			productReference = F2B5AA5F2D25368F0011787A /* SwiftUICatelog.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -243,6 +242,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2B5AA352D2515630011787A /* SwiftUICatelogApp.swift in Sources */,
+				F2B5AA5E2D25365A0011787A /* HomeView.swift in Sources */,
+				F2B5AA5C2D25342A0011787A /* Links.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,12 +380,12 @@
 				DEVELOPMENT_TEAM = 7RC8RLSUKW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftUICatelog/Info.plist;
+				INFOPLIST_FILE = "SwiftUICatelog/Supporting File's/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,12 +410,12 @@
 				DEVELOPMENT_TEAM = 7RC8RLSUKW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SwiftUICatelog/Info.plist;
+				INFOPLIST_FILE = "SwiftUICatelog/Supporting File's/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
