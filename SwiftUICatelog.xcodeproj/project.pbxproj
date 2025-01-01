@@ -20,6 +20,7 @@
 		F2753CC92D25838D00F470A0 /* ImagesComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CC82D25838D00F470A0 /* ImagesComponentView.swift */; };
 		F2753CCB2D25886800F470A0 /* LabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CCA2D25886800F470A0 /* LabelsView.swift */; };
 		F2753CCD2D25922700F470A0 /* TogglesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CCC2D25922700F470A0 /* TogglesView.swift */; };
+		F2753CCF2D259A6800F470A0 /* SlidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2753CCE2D259A6800F470A0 /* SlidersView.swift */; };
 		F2B5AA2D2D2515440011787A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B5AA252D2515440011787A /* Assets.xcassets */; };
 		F2B5AA2E2D2515440011787A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B5AA272D2515440011787A /* Preview Assets.xcassets */; };
 		F2B5AA352D2515630011787A /* SwiftUICatelogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5AA332D2515630011787A /* SwiftUICatelogApp.swift */; };
@@ -41,6 +42,7 @@
 		F2753CC82D25838D00F470A0 /* ImagesComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesComponentView.swift; sourceTree = "<group>"; };
 		F2753CCA2D25886800F470A0 /* LabelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelsView.swift; sourceTree = "<group>"; };
 		F2753CCC2D25922700F470A0 /* TogglesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglesView.swift; sourceTree = "<group>"; };
+		F2753CCE2D259A6800F470A0 /* SlidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidersView.swift; sourceTree = "<group>"; };
 		F2B5AA252D2515440011787A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2B5AA272D2515440011787A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F2B5AA332D2515630011787A /* SwiftUICatelogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICatelogApp.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 		F2753CC42D2562E900F470A0 /* Controlls */ = {
 			isa = PBXGroup;
 			children = (
+				F2753CCE2D259A6800F470A0 /* SlidersView.swift */,
 				F2753CCA2D25886800F470A0 /* LabelsView.swift */,
 				F2753CC32D2562E900F470A0 /* ButtonView.swift */,
 				F2753CC62D2563C500F470A0 /* TextView.swift */,
@@ -286,6 +289,7 @@
 				F2B5AA352D2515630011787A /* SwiftUICatelogApp.swift in Sources */,
 				F2753C2D2D2552E600F470A0 /* NavigationDestination.swift in Sources */,
 				F2B5AA5E2D25365A0011787A /* HomeView.swift in Sources */,
+				F2753CCF2D259A6800F470A0 /* SlidersView.swift in Sources */,
 				F2753CB92D2562E900F470A0 /* DocumentationLinkView.swift in Sources */,
 				F2753CBA2D2562E900F470A0 /* FontTextStylePicker.swift in Sources */,
 				F2753CCD2D25922700F470A0 /* TogglesView.swift in Sources */,

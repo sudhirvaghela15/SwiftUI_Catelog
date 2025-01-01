@@ -27,10 +27,7 @@ struct HomeView: View {
 							
 							NavigationLink(destination: ImagesComponentView(), label: { Text("Images") })
 							
-							NavigationLink(
-								destination: TextView() ,
-								label: { Text("Texts")
-								})
+							NavigationLink(destination: TextView() ,label: { Text("Texts") })
 							
 							NavigationLink(destination: LabelsView(), label: { Text("Labels") })
 							
@@ -40,7 +37,7 @@ struct HomeView: View {
 						Group {
 							NavigationLink(destination: TogglesView(), label: { Text("Toggles") })
 							
-							NavigationLink(destination: Text("Sliders"), label: { Text("Sliders") })
+							NavigationLink(destination: SlidersView(), label: { Text("Sliders") })
 							
 							NavigationLink(destination: Text("Steppers"), label: { Text("Steppers") })
 							
