@@ -40,21 +40,20 @@ struct HomeView: View {
 //							NavigationLink(destination: Text("Progress View"), label: { Text("Progress View") })
 						}
 					}.listRowBackground(Color.indigo)
-						.listRowInsets(
-							EdgeInsets(top: 5, leading: 16, bottom: 5, trailing: 16)
-						)
+						.listRowInsets(EdgeInsets(top: 5, leading: 16, bottom: 5, trailing: 16))
 						.listRowSeparatorTint(Color.orange)
 						.font(.title2.weight(.bold))
 					
 					
 					Section(header: Text("Gestures")
-						.font(.title)
 						.modifier(ListSectionFontModifier())) {
-							
 							NavigationLink(destination: GesturesView(), label: { Text("Gestures") })
 							NavigationLink(destination: ComposingGesturesView(), label: { Text("Composing Gestures") })
 						}
 						.listRowBackground(Color.accentColor)
+						.listRowInsets(EdgeInsets(top: 5, leading: 16, bottom: 5, trailing: 16))
+						.listRowSeparatorTint(Color.orange)
+						.font(.title2.weight(.bold))
 					
 				}
 			}.navigationTitle("Swift UI Catelog")
