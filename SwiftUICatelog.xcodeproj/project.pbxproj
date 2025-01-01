@@ -6,17 +6,18 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXFileReference section */
-		F2B5A9D02D2507880011787A /* SwiftUICatelog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICatelog.app; sourceTree = BUILT_PRODUCTS_DIR; };
-/* End PBXFileReference section */
+/* Begin PBXBuildFile section */
+		F2B5AA2D2D2515440011787A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B5AA252D2515440011787A /* Assets.xcassets */; };
+		F2B5AA2E2D2515440011787A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B5AA272D2515440011787A /* Preview Assets.xcassets */; };
+		F2B5AA352D2515630011787A /* SwiftUICatelogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5AA332D2515630011787A /* SwiftUICatelogApp.swift */; };
+/* End PBXBuildFile section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F2B5A9D22D2507880011787A /* SwiftUICatelog */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftUICatelog;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
+/* Begin PBXFileReference section */
+		F2B5AA252D2515440011787A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F2B5AA272D2515440011787A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F2B5AA322D2515630011787A /* SwiftUICatelog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = SwiftUICatelog.app; path = "/Users/sm15/Personal/XCode-Projects/SwiftUI/SwiftUICatelog/build/Debug-iphoneos/SwiftUICatelog.app"; sourceTree = "<absolute>"; };
+		F2B5AA332D2515630011787A /* SwiftUICatelogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICatelogApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F2B5A9CD2D2507880011787A /* Frameworks */ = {
@@ -32,17 +33,58 @@
 		F2B5A9C72D2507880011787A = {
 			isa = PBXGroup;
 			children = (
-				F2B5A9D22D2507880011787A /* SwiftUICatelog */,
-				F2B5A9D12D2507880011787A /* Products */,
+				F2B5AA2C2D2515440011787A /* SwiftUICatelog */,
 			);
 			sourceTree = "<group>";
 		};
-		F2B5A9D12D2507880011787A /* Products */ = {
+		F2B5AA262D2515440011787A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F2B5A9D02D2507880011787A /* SwiftUICatelog.app */,
+				F2B5AA252D2515440011787A /* Assets.xcassets */,
 			);
-			name = Products;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F2B5AA282D2515440011787A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F2B5AA272D2515440011787A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F2B5AA292D2515440011787A /* Supporting File's */ = {
+			isa = PBXGroup;
+			children = (
+				F2B5AA282D2515440011787A /* Preview Content */,
+			);
+			path = "Supporting File's";
+			sourceTree = "<group>";
+		};
+		F2B5AA2C2D2515440011787A /* SwiftUICatelog */ = {
+			isa = PBXGroup;
+			children = (
+				F2B5AA342D2515630011787A /* App */,
+				F2B5AA372D2515AF0011787A /* Modules */,
+				F2B5AA262D2515440011787A /* Resources */,
+				F2B5AA292D2515440011787A /* Supporting File's */,
+			);
+			path = SwiftUICatelog;
+			sourceTree = "<group>";
+		};
+		F2B5AA342D2515630011787A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F2B5AA332D2515630011787A /* SwiftUICatelogApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F2B5AA372D2515AF0011787A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,14 +102,11 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				F2B5A9D22D2507880011787A /* SwiftUICatelog */,
-			);
 			name = SwiftUICatelog;
 			packageProductDependencies = (
 			);
 			productName = SwiftUICatelog;
-			productReference = F2B5A9D02D2507880011787A /* SwiftUICatelog.app */;
+			productReference = F2B5AA322D2515630011787A /* SwiftUICatelog.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -95,7 +134,7 @@
 			mainGroup = F2B5A9C72D2507880011787A;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = F2B5A9D12D2507880011787A /* Products */;
+			productRefGroup = F2B5A9C72D2507880011787A;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -109,6 +148,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B5AA2D2D2515440011787A /* Assets.xcassets in Resources */,
+				F2B5AA2E2D2515440011787A /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2B5AA352D2515630011787A /* SwiftUICatelogApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +293,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICatelog/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICatelog/Supporting File's/Preview Content\"";
 				DEVELOPMENT_TEAM = 7RC8RLSUKW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -260,6 +302,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -280,7 +323,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICatelog/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUICatelog/Supporting File's/Preview Content\"";
 				DEVELOPMENT_TEAM = 7RC8RLSUKW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -289,6 +332,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
