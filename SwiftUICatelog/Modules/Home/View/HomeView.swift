@@ -25,7 +25,10 @@ struct HomeView: View {
 						
 						NavigationLink(destination: Text("Images"), label: { Text("Images") })
 						
-						NavigationLink(destination: Text("Texts") , label: { Text("Texts") })
+						NavigationLink(
+							destination: TextView() ,
+							label: { Text("Texts")
+							})
 						
 						NavigationLink(destination: Text("Labels"), label: { Text("Labels") })
 						
