@@ -26,7 +26,7 @@ struct SlidersView: View {
 				sliderGrams
 				sliderWithVoiceOver
 			}
-		}.padding(.top, 80)
+		}.padding(.horizontal, 16)
 	}
 	
 	private var sliderGrams: some View {
