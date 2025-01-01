@@ -83,8 +83,88 @@
 		F2B5AA372D2515AF0011787A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F2B5AA522D2517B70011787A /* Shared Views */,
+				F2B5AA442D2517810011787A /* Splash */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		F2B5AA402D2517810011787A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2B5AA412D2517810011787A /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		F2B5AA422D2517810011787A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2B5AA412D2517810011787A /* Supporting Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2B5AA432D2517810011787A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F2B5AA442D2517810011787A /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				F2B5AA402D2517810011787A /* Model */,
+				F2B5AA422D2517810011787A /* View */,
+				F2B5AA432D2517810011787A /* ViewModel */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		F2B5AA4E2D2517B70011787A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F2B5AA4F2D2517B70011787A /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		F2B5AA502D2517B70011787A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F2B5AA4F2D2517B70011787A /* Supporting Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F2B5AA512D2517B70011787A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F2B5AA522D2517B70011787A /* Shared Views */ = {
+			isa = PBXGroup;
+			children = (
+				F2B5AA4E2D2517B70011787A /* Model */,
+				F2B5AA502D2517B70011787A /* View */,
+				F2B5AA512D2517B70011787A /* ViewModel */,
+			);
+			path = "Shared Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
