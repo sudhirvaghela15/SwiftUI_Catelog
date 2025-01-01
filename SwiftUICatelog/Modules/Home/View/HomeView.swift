@@ -34,11 +34,11 @@ struct HomeView: View {
 							
 							NavigationLink(destination: LabelsView(), label: { Text("Labels") })
 							
-							NavigationLink(destination: Text("Menus"), label: { Text("Menus") })
+//							NavigationLink(destination: Text("Menus"), label: { Text("Menus") })
 						}
 					
 						Group {
-							NavigationLink(destination: Text("Toggles"), label: { Text("Toggles") })
+							NavigationLink(destination: TogglesView(), label: { Text("Toggles") })
 							
 							NavigationLink(destination: Text("Sliders"), label: { Text("Sliders") })
 							
