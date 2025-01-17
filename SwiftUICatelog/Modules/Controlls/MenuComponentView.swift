@@ -7,10 +7,20 @@
 
 import SwiftUI
 
+/// https://developer.apple.com/documentation/swiftui/menu
 struct MenuComponentView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Hello, Menu!")
     }
+}
+
+
+/// https://developer.apple.com/documentation/swiftui/menustyleconfiguration
+struct PinkBorderMenuStyle: MenuStyle {
+	func makeBody(configuration: Configuration) -> some View {
+		Menu(configuration)
+			.border(Color.pink)
+	}
 }
 
 #Preview {

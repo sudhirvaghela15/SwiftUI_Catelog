@@ -14,6 +14,7 @@ import Foundation
 /// https://developer.apple.com/documentation/visionOS/destination-video
 /// https://developer.apple.com/documentation/swiftui/textvariantpreference?changes=_4
 /// https://developer.apple.com/documentation/swiftui/groupbox
+/// https://developer.apple.com/documentation/swiftui/text
 ///
 ////-----------------------------------------------------------------------------------------------------------------------------------------------
 /// **Geometry Releted Doc's
@@ -25,4 +26,6 @@ import Foundation
 /// https://developer.apple.com/documentation/swiftui/angle
 /// https://developer.apple.com/documentation/swiftui/projectiontransform
 /// https://developer.apple.com/documentation/swiftui/vectorarithmetic
+/// https://developer.apple.com/documentation/swiftui/menu
+	/// https://developer.apple.com/documentation/swiftui/menustyleconfiguration
 ////-----------------------------------------------------------------------------------------------------------------------------------------------

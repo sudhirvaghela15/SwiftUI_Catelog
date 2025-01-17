@@ -42,10 +42,10 @@ struct HomeView: View {
 			}
 		
 			Group {
-//							NavigationLink(destination: Text("Menus"), label: { Text("Menus") })
-//							NavigationLink(destination: Text("Steppers"), label: { Text("Steppers") })
-//							NavigationLink(destination: Text("Pickers"), label: { Text("Pickers") })
-//							NavigationLink(destination: Text("Date Picker"), label: { Text("Date Pickers") })
+				NavigationLink(destination: MenuComponentView(), label: { Text("Menus") })
+				NavigationLink(destination: SteppersComponentsView(), label: { Text("Steppers") })
+				NavigationLink(destination: PickerComponentsView(), label: { Text("Pickers") })
+//				NavigationLink(destination: Text("Date Picker"), label: { Text("Date Pickers") })
 //							NavigationLink(destination: Text("Color Picker"), label: { Text("Color Pickers") })
 //							NavigationLink(destination: Text("Progress View"), label: { Text("Progress View") })
 			}
