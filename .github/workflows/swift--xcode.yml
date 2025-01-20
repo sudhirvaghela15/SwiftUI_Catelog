@@ -24,4 +24,4 @@ jobs:
         
       - name: iOS build
         run: 
-          xcodebuild -sdk iphonesimulator -configuration Debug -workspace "Bitrise.xcworkspace" -scheme "Bitrise" -derivedDataPath $(pwd)
+          xcodebuild -sdk iphonesimulator -configuration Debug -workspace "SwiftUI_Catelog.xcworkspace" -scheme "SwiftUI_Catelog" -derivedDataPath $(pwd)
