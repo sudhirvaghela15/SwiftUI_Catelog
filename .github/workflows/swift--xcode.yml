@@ -24,5 +24,5 @@ jobs:
         
       - name: iOS build
         run: |
-          ls - l
+          cd ..
           xcodebuild -sdk iphonesimulator -configuration Debug -workspace "SwiftUI_Catelog.xcworkspace" -scheme "SwiftUI_Catelog" -derivedDataPath $(pwd)
