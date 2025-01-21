@@ -11,7 +11,7 @@ jobs:
     runs-on: macos-latest
 
     env:
-      project: 'SwiftUI_Catelog/SwiftUICatelog.xcodeproj'
+      project: 'SwiftUICatelog.xcodeproj'
       scheme: 'SwiftUICatelog'
       sdk: 'iphonesimulator'
       destination: 'platform=iOSSimulator, OS=latest, name=iPhone16Pro'
