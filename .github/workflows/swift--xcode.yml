@@ -14,7 +14,7 @@ jobs:
       project: 'SwiftUICatelog.xcodeproj'
       scheme: 'SwiftUICatelog'
       sdk: 'iphonesimulator'
-      destination: 'platform=iOSSimulator, OS=latest, name=iPhone16Pro'
+      destination: 'platform=iphonesimulator, OS=latest, name=iPhone16Pro'
 
     steps:
 
