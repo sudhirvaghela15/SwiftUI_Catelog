@@ -14,7 +14,7 @@ jobs:
       project: 'SwiftUICatelog.xcodeproj'
       scheme: 'SwiftUICatelog'
       sdk: 'iphonesimulator'
-      destination: 'platform=iphonesimulator, OS=latest, name=iPhone16Pro'
+      destination: 'platform=iOS Simulator, OS=latest, name=iPhone 16 Pro'
 
     steps:
 
@@ -29,5 +29,5 @@ jobs:
         uses: actions/checkout@v4
         
       - name: build 
-        run: xcodebuild -project '${{ env.project }}' -scheme ${{ env.scheme }} -sdk ${{ env.sdk }} -destination ${{ env.destination }}
+        run: xcodebuild -project '${{ env.project }}' -scheme ${{ env.scheme }} -sdk ${{ env.sdk }} -destination ${{ env.destination }} build
           # xcodebuild -sdk iphonesimulator -configuration Debug -workspace "SwiftUI_Catelog.xcodeproj" -scheme "SwiftUI_Catelog" -derivedDataPath $(pwd)
