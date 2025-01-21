@@ -32,5 +32,5 @@ jobs:
         run: xcrun simctl list devices
         
       - name: build 
-        run: xcodebuild -project '${{ env.project }}' -scheme ${{ env.scheme }} -sdk ${{ env.sdk }} -destination ${{ env.destination }} build
+        run: xcodebuild build -project '${{ env.project }}' -scheme ${{ env.scheme }} -sdk ${{ env.sdk }} -destination ${{ env.destination }}
           # xcodebuild -sdk iphonesimulator -configuration Debug -workspace "SwiftUI_Catelog.xcodeproj" -scheme "SwiftUI_Catelog" -derivedDataPath $(pwd)
