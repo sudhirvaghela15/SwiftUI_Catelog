@@ -12,13 +12,13 @@ jobs:
     strategy:  
       matrix:
        run-config:
-         - { project: 'SwiftUICatelog.xcodeproj', scheme: 'SwiftUICatelog', sdk: 'iphonesimulator', destination: 'platform=iOS Simulator,OS=latest,name=iPhone 16 Pro' }
+         - { project: 'SwiftUICatelog.xcodeproj', scheme: 'SwiftUICatelog', sdk: 'iphonesimulator', destination: 'platform=iOS Simulator,OS=latest,name=iPhone 16' }
 
     env:
       project: 'SwiftUICatelog.xcodeproj'
       scheme: 'SwiftUICatelog'
       sdk: 'iphonesimulator'
-      destination: 'platform=iOS Simulator, OS=latest, name=iPhone 16 Pro'
+      destination: 'platform=iOS Simulator, OS=latest, name=iPhone 16'
 
     steps:
 
