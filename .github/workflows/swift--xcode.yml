@@ -9,6 +9,10 @@ on:
 jobs:
   build:
     runs-on: macos-latest
+    strategy:  
+      matrix:
+       run-config:
+         - { project: 'SwiftUICatelog.xcodepro', scheme: 'SwiftUICatelog', sdk: 'iphonesimulator', destination: 'platform=iOS Simulator,OS=latest,name=iPhone 16 Pro' }
 
     env:
       project: 'SwiftUICatelog.xcodeproj'
@@ -28,8 +32,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: List sims
-        run: xcrun simctl list devices
+      # - name: List sims
+        # run: xcrun simctl list devices
         
       - name: build 
         run: xcodebuild build -project '${{ env.project }}' -scheme ${{ env.scheme }} -sdk ${{ env.sdk }} -destination ${{ env.destination }}
