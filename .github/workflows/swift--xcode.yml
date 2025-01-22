@@ -14,11 +14,11 @@ jobs:
     #    run-config:
     #      - { project: 'SwiftUICatelog.xcodeproj', scheme: 'SwiftUICatelog', sdk: 'iphonesimulator', destination: 'platform=iOS Simulator,OS=latest,name=iPhone 16' }
 
-    # env:
-    #   project: 'SwiftUICatelog.xcodeproj'
-    #   scheme: 'SwiftUICatelog'
-    #   sdk: 'iphonesimulator'
-    #   destination: 'platform=iOS Simulator, OS=latest, name=iPhone 16'
+    env:
+      project: 'SwiftUICatelog.xcodeproj'
+      scheme: 'SwiftUICatelog'
+      sdk: 'iphonesimulator'
+      destination: 'platform=iOS Simulator, OS=latest, name=iPhone 16'
 
     steps:
 
@@ -29,9 +29,12 @@ jobs:
       - name: check Xcode version
         run: /usr/bin/xcodebuild -version
 
-      - uses: muukii/actions-xcode-install-simulator@main
-        with: 
-          ios_version: "18.2"
+      # - uses: muukii/actions-xcode-install-simulator@main
+      #   with: 
+      #     ios_version: "18.2"
+
+      - name: Deviece List
+        run: xcrun simctl list devices
     
       - name: Checkout
         uses: actions/checkout@v4
