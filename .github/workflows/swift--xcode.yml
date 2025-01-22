@@ -29,7 +29,7 @@ jobs:
       - name: check Xcode version
         run: /usr/bin/xcodebuild -version
 
-      - uses: actions-xcode-install-simulator@main
+      - uses: futureware-tech/actions-xcode-install-simulator@main
         with: 
           ios_version: "18.2"
     
