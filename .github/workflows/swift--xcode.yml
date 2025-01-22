@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
+    runs-on: 'macos-15'
     # strategy:  
     #   matrix:
     #    run-config:
@@ -22,24 +22,24 @@ jobs:
 
     steps:
 
-      - uses: maxim-lobanov/setup-xcode@v1
-        with: 
-          xcode-version: latest
+      # - uses: maxim-lobanov/setup-xcode@v1
+      #   with: 
+      #     xcode-version: latest
         
-      - name: check Xcode version
-        run: /usr/bin/xcodebuild -version
+      # - name: check Xcode version
+      #   run: /usr/bin/xcodebuild -version
 
-      - uses: muukii/actions-xcode-install-simulator@main
-        with: 
-          ios_version: "18.2"
+      # - uses: muukii/actions-xcode-install-simulator@main
+      #   with: 
+      #     ios_version: "18.2"
     
       - name: Checkout
         uses: actions/checkout@v4
         
-      - uses: futureware-tech/simulator-action@v4
-        with:
-          ios_version: 18.2 
-          model: 'iPhone 16 Pro'
+      # - uses: futureware-tech/simulator-action@v4
+      #   with:
+      #     ios_version: 18.2 
+      #     model: 'iPhone 16 Pro'
 
       - name: Deviece List
         run: xcrun simctl list devices
@@ -52,6 +52,6 @@ jobs:
           xcodebuild -list
         
       - name: build 
-        # run: xcodebuild -sdk iphonesimulator -configuration Debug -project "SwiftUICatelog.xcodeproj" -scheme "SwiftUICatelog" -derivedDataPath $(pwd)
+        run: xcodebuild -sdk iphonesimulator -configuration Debug -project "SwiftUICatelog.xcodeproj" -scheme "SwiftUICatelog" -derivedDataPath $(pwd)
         # run: set -o pipefail && xcodebuild build -project '${{ matrix.run-config['project'] }}' -scheme '${{ matrix.run-config['scheme'] }}' -sdk '${{ matrix.run-config['sdk'] }}' -destination '${{ matrix.run-config['destination'] }}' CODE_SIGNING_ALLOWED='NO' | xcbeautify
-        run: xcodebuild build -project '${{ env.project }}' -scheme ${{ env.scheme }} -sdk ${{ env.sdk }} -destination ${{ env.destination }}
+        # run: xcodebuild build -project '${{ env.project }}' -scheme ${{ env.scheme }} -sdk ${{ env.sdk }} -destination ${{ env.destination }}
