@@ -29,16 +29,16 @@ jobs:
       - name: check Xcode version
         run: /usr/bin/xcodebuild -version
 
-      # - uses: muukii/actions-xcode-install-simulator@main
-      #   with: 
-      #     ios_version: "18.2"
+      - uses: actions-xcode-install-simulator@main
+        with: 
+          ios_version: "18.2"
     
       - name: Checkout
         uses: actions/checkout@v4
         
       - uses: futureware-tech/simulator-action@v4
         with:
-          ios_version: latest 
+          ios_version: 18.2 
           model: 'iPhone 16 Pro'
 
       - name: Deviece List
