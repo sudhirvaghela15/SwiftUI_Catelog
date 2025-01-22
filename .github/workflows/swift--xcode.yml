@@ -9,10 +9,10 @@ on:
 jobs:
   build:
     runs-on: macos-latest
-    strategy:  
-      matrix:
-       run-config:
-         - { project: 'SwiftUICatelog.xcodeproj', scheme: 'SwiftUICatelog', sdk: 'iphonesimulator', destination: 'platform=iOS Simulator,OS=latest,name=iPhone 16' }
+    # strategy:  
+    #   matrix:
+    #    run-config:
+    #      - { project: 'SwiftUICatelog.xcodeproj', scheme: 'SwiftUICatelog', sdk: 'iphonesimulator', destination: 'platform=iOS Simulator,OS=latest,name=iPhone 16' }
 
     env:
       project: 'SwiftUICatelog.xcodeproj'
@@ -32,10 +32,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # - name: List sims
-        # run: xcrun simctl list devices
+      - name: Print path and schemes
+        run: |
+          ls -la
+          cat $(pwd)
+          echo "Project info are : "
+          xcodebuild -list
         
       - name: build 
-        run: set -o pipefail && xcodebuild build -project '${{ matrix.run-config['project'] }}' -scheme '${{ matrix.run-config['scheme'] }}' -sdk '${{ matrix.run-config['sdk'] }}' -destination '${{ matrix.run-config['destination'] }}' CODE_SIGNING_ALLOWED='NO' | xcbeautify
+        run: xcodebuild -sdk iphonesimulator -configuration Debug -workspace "SwiftUI_Catelog.xcodeproj" -scheme "SwiftUI_Catelog" -derivedDataPath $(pwd)
+        # run: set -o pipefail && xcodebuild build -project '${{ matrix.run-config['project'] }}' -scheme '${{ matrix.run-config['scheme'] }}' -sdk '${{ matrix.run-config['sdk'] }}' -destination '${{ matrix.run-config['destination'] }}' CODE_SIGNING_ALLOWED='NO' | xcbeautify
         # run: xcodebuild build -project '${{ env.project }}' -scheme ${{ env.scheme }} -sdk ${{ env.sdk }} -destination ${{ env.destination }}
           # xcodebuild -sdk iphonesimulator -configuration Debug -workspace "SwiftUI_Catelog.xcodeproj" -scheme "SwiftUI_Catelog" -derivedDataPath $(pwd)
