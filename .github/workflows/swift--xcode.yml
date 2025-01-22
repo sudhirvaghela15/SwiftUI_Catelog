@@ -14,11 +14,11 @@ jobs:
     #    run-config:
     #      - { project: 'SwiftUICatelog.xcodeproj', scheme: 'SwiftUICatelog', sdk: 'iphonesimulator', destination: 'platform=iOS Simulator,OS=latest,name=iPhone 16' }
 
-    env:
-      project: 'SwiftUICatelog.xcodeproj'
-      scheme: 'SwiftUICatelog'
-      sdk: 'iphonesimulator'
-      destination: 'platform=iOS Simulator, OS=latest, name=iPhone 16'
+    # env:
+    #   project: 'SwiftUICatelog.xcodeproj'
+    #   scheme: 'SwiftUICatelog'
+    #   sdk: 'iphonesimulator'
+    #   destination: 'platform=iOS Simulator, OS=latest, name=iPhone 16'
 
     steps:
 
