@@ -35,7 +35,7 @@ jobs:
       - name: Print path and schemes
         run: |
           ls -la
-          cat $(pwd)
+          # cat $(pwd)
           echo "Project info are : "
           xcodebuild -list
         
