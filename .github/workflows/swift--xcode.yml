@@ -32,12 +32,16 @@ jobs:
       # - uses: muukii/actions-xcode-install-simulator@main
       #   with: 
       #     ios_version: "18.2"
-
-      - name: Deviece List
-        run: xcrun simctl list devices
     
       - name: Checkout
         uses: actions/checkout@v4
+        
+      - uses: futureware-tech/simulator-action@v4
+        with:
+          model: 'iPhone 16 Pro'
+
+      - name: Deviece List
+        run: xcrun simctl list devices
 
       - name: Print path and schemes
         run: |
