@@ -22,6 +22,9 @@ struct HomeView: View {
 					viewModifiers
 				}
 			}.navigationTitle("Swift UI Catelog")
+				.navigationBarTitleDisplayMode(.inline)
+				.padding()
+				.ignoresSafeArea(.all, edges: [.bottom, .leading, .trailing])
 //			.navigationDestinationControll(namespace)
 		}
 	}

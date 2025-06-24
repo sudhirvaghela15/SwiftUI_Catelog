@@ -12,6 +12,7 @@ struct SwiftUICatelogApp: App {
     var body: some Scene {
         WindowGroup {
 			HomeView()
+			
 //			ButtonsView(namespace: Namespace().wrappedValue)
         }
     }
